@@ -10,13 +10,13 @@
 
   gtag('config', 'G-S20ZX93LV6');
 </script>    
-<meta name="description" content="Romain Lacombe — researcher, entrepreneur, and investor in AI for science."/>
+<meta name="description" content="Romain Lacombe — AI Researcher, Science Founder, Deeptech Investor."/>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@rlacombe" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://romainlacombe.com" />
 <meta property="og:title" content="Romain Lacombe" />
-<meta property="og:description" content="Researcher, entrepreneur, and investor in AI for science." />
+<meta property="og:description" content="AI Researcher, Science Founder, Deeptech Investor." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://romainlacombe.com" />
 <style>
@@ -48,7 +48,15 @@
 		padding: 80px 0 64px;
 	}
 
-	h1 {
+	.hero {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 32px;
+		margin-bottom: 48px;
+	}
+
+	.hero-text h1 {
 		font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
 		font-size: 3rem;
 		font-weight: 700;
@@ -57,12 +65,21 @@
 		margin-bottom: 12px;
 	}
 
-	h1 + p {
+	.hero-text p {
 		font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', serif;
 		font-size: 1.2rem;
 		font-style: italic;
 		color: var(--muted);
-		margin-bottom: 48px;
+		margin-bottom: 0;
+	}
+
+	.headshot {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		object-fit: cover;
+		border: 2px solid var(--border);
+		flex-shrink: 0;
 	}
 
 	h2 {
@@ -187,8 +204,10 @@
 
 	@media (max-width: 480px) {
 		#maincontent { padding: 48px 0 40px; }
-		h1 { font-size: 2.4rem; }
-		h1 + p { font-size: 1.05rem; }
+		.hero { gap: 20px; }
+		.hero-text h1 { font-size: 2.4rem; }
+		.hero-text p { font-size: 1.05rem; }
+		.headshot { width: 100px; height: 100px; }
 		li { padding: 12px 14px; }
 		.publications li { padding: 10px 12px; }
 		ul.social-links { gap: 6px; }
@@ -201,46 +220,51 @@
 
 <body>
 <div id="maincontent">
-  <h1>Romain Lacombe</h1>
-	<p>Researcher, entrepreneur, and investor in AI for science.</p>
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Romain Lacombe</h1>
+      <p>AI Researcher, Science Founder, Deeptech Investor.</p>
+    </div>
+    <img src="headshot_hires_final.jpeg" alt="Romain Lacombe" class="headshot">
+  </div>
 
     <h2>Publications</h2>
 
     <p>I research AI for science, with a focus on evals for reasoning models and biomolecular structure prediction. My interests span physical scales, from atmospheric sciences to materials discovery and molecular biology. Latest work:</p>
 
         <ul class="publications">
-            <li><b>Don’t Think Twice! Over-Reasoning Impairs Confidence Calibration.</b> <u>Romain Lacombe</u>, Kerrie Wu, Eddie Dilworth. <i>ICML 2025 Workshop on Reliable and Responsible Foundation Models.</i> <a href="https://arxiv.org/abs/2508.15050">[paper]</a><a href="https://github.com/rlacombe/LLM-Calibration">[code]</a><a href="files/2025 08 28 SNAP Summer Talk.pdf">[slides]</a></li>
-            <li><b>Non-canonical crosslinks confound evolutionary protein structure models.</b> <u>Romain Lacombe</u>. <i>Stanford workshop on experimental design in AI for Science, 2025.</i> <a href="https://www.biorxiv.org/content/10.1101/2025.03.17.643596v1">[paper]</a><a href="https://github.com/rlacombe/Sactibonds">[code]</a><a href="files/2025 05 06 AI+Biomedicine Seminar.pdf">[slides]</a></li>
-            <li><b>Accelerating the generation of molecular conformations with progressive distillation of equivariant latent diffusion models.</b> <u>Romain Lacombe</u>, Neal Vaidya. <i>Generative and experimental perspectives for biomolecular design workshop, ICLR 2024.</i> <a href="https://arxiv.org/abs/2404.13491v1">[paper]</a><a href="https://github.com/rlacombe/AccGeoLDM">[code]</a><a href="files/2025 05 06 AI+Biomedicine Seminar.pdf">[slides]</a></li>
+            <li><b>Don’t Think Twice! Over-Reasoning Impairs Confidence Calibration.</b> <u>Romain Lacombe</u>, Kerrie Wu, Eddie Dilworth. <i>ICML 2025 Workshop on Reliable and Responsible Foundation Models.</i> <a href="https://arxiv.org/abs/2508.15050">[paper]</a><a href="https://github.com/rlacombe/LLM-Calibration">[code]</a><a href="files/2025%2008%2028%20SNAP%20Summer%20Talk.pdf">[slides]</a></li>
+            <li><b>Non-canonical crosslinks confound evolutionary protein structure models.</b> <u>Romain Lacombe</u>. <i>Stanford workshop on experimental design in AI for Science, 2025.</i> <a href="https://www.biorxiv.org/content/10.1101/2025.03.17.643596v1">[paper]</a><a href="https://github.com/rlacombe/Sactibonds">[code]</a><a href="files/2025%2005%2006%20AI%2BBiomedicine%20Seminar.pdf">[slides]</a></li>
+            <li><b>Accelerating the generation of molecular conformations with progressive distillation of equivariant latent diffusion models.</b> <u>Romain Lacombe</u>, Neal Vaidya. <i>Generative and experimental perspectives for biomolecular design workshop, ICLR 2024.</i> <a href="https://arxiv.org/abs/2404.13491v1">[paper]</a><a href="https://github.com/rlacombe/AccGeoLDM">[code]</a><a href="files/2025%2005%2006%20AI%2BBiomedicine%20Seminar.pdf">[slides]</a></li>
             <li><b>AdsorbRL: deep reinforcement learning for inverse catalyst design.</b> <i>AI for accelerated materials design workshop, NeurIPS 2023.</i> <u>Romain Lacombe</u>, Lucas Hendren, Khalid El-Awady. <a href="https://arxiv.org/abs/2312.02308">[paper]</a><a href="https://github.com/rlacombe/AdsorbRL">[code]</a></li>
-            <li><b>ClimateX: do LLMs accurately assess human expert confidence in climate statements?</b> <u>Romain Lacombe</u>, Kerrie Wu, Eddie Dilworth. <i>Tackling climate change with machine learning workshop, NeurIPS 2023.</i> <a href="https://arxiv.org/abs/2311.17107">[paper]</a><a href="https://github.com/rlacombe/ClimateX">[code]</a><a href="files/SuDS 2025 ClimateX Romain Lacombe.pdf">[slides]</a></li>
-            <li><b>Extracting molecular properties from natural language with multimodal contrastive learning.</b> <u>Romain Lacombe</u>, Andrew Gaut, Jeff He, David Lüdeke, Kateryna Pistunova. <i>Computational biology workshop, ICML 2023.</i> <a href="https://arxiv.org/abs/2307.12996">[paper]</a><a href="https://github.com/rlacombe/new-MoMu">[code]</a><a href="files/2025 05 06 AI+Biomedicine Seminar.pdf">[slides]</a></li>
+            <li><b>ClimateX: do LLMs accurately assess human expert confidence in climate statements?</b> <u>Romain Lacombe</u>, Kerrie Wu, Eddie Dilworth. <i>Tackling climate change with machine learning workshop, NeurIPS 2023.</i> <a href="https://arxiv.org/abs/2311.17107">[paper]</a><a href="https://github.com/rlacombe/ClimateX">[code]</a><a href="files/SuDS%202025%20ClimateX%20Romain%20Lacombe.pdf">[slides]</a></li>
+            <li><b>Extracting molecular properties from natural language with multimodal contrastive learning.</b> <u>Romain Lacombe</u>, Andrew Gaut, Jeff He, David Lüdeke, Kateryna Pistunova. <i>Computational biology workshop, ICML 2023.</i> <a href="https://arxiv.org/abs/2307.12996">[paper]</a><a href="https://github.com/rlacombe/new-MoMu">[code]</a><a href="files/2025%2005%2006%20AI%2BBiomedicine%20Seminar.pdf">[slides]</a></li>
             <li><b>Improving extreme weather events detection with light-weight neural networks.</b> <u>Romain Lacombe</u>, Hannah Grossman, Lucas Hendren, David Lüdeke. <i>Tackling climate change with machine learning workshop, ICLR 2023.</i> <a href="https://arxiv.org/abs/2304.00176">[paper]</a><a href="https://github.com/hannahg141/ClimateNet">[code]</a></li>
         </ul>
         <!--<p>I've also served on the program committee for workshops on climate, life and material sciences, and foundation models for biological discovery at NeurIPS and ICML.</p>-->
 
     <h3>Recent talks</h3>
     <ul class="talks">
-        <li><b>Calibrating LLM Confidence in the Science Domain</b>, LawZero talk, March 2026. <a href="files/2026 03 09 LawZero Talk.pdf">[slides]</a></li>
-        <li><b>Limits of Reasoning Models in Science</b>, Stanford SNAP Summer Talk, August 2025. <a href="files/2025 08 28 SNAP Summer Talk.pdf">[slides]</a></li>
-        <li><b>Map, Model, Measure: AI for Biomolecules</b>, Stanford Data Science, AI+Biomedicine Seminar, May 2025. <a href="files/2025 05 06 AI+Biomedicine Seminar.pdf">[slides]</a></li>
-        <li><b>Do LLMs Accurately Assess Human Expert Confidence in Climate Statements?</b> Stanford Data Science, Sustainability Data Science conference, April 2025. <a href="files/2025 04 15 Stanford Sustainability Data Science.pdf">[slides]</a></li>
-        <li><b>AI Applications to Chemical Engineering</b>, Cargnello group talk, Stanford, January 2024. <a href="files/2024 01 12 Presentation Cargnello Group.pdf">[slides]</a></li>
-        <li><b>MoleCL: Molecular Graph Contrastive Learning with Reactions-Inspired Augmentations</b>, American Chemical Society, Fall 2023 Meeting. <a href="files/2023 08 16 ACS Fall Presentation.pdf">[slides]</a></li>
+        <li><b>Calibrating LLM Confidence in the Science Domain</b>, LawZero talk, March 2026. <a href="files/2026%2003%2009%20LawZero%20Talk.pdf">[slides]</a></li>
+        <li><b>Limits of Reasoning Models in Science</b>, Stanford SNAP Summer Talk, August 2025. <a href="files/2025%2008%2028%20SNAP%20Summer%20Talk.pdf">[slides]</a></li>
+        <li><b>Map, Model, Measure: AI for Biomolecules</b>, Stanford Data Science, AI+Biomedicine Seminar, May 2025. <a href="files/2025%2005%2006%20AI%2BBiomedicine%20Seminar.pdf">[slides]</a></li>
+        <li><b>Do LLMs Accurately Assess Human Expert Confidence in Climate Statements?</b> Stanford Data Science, Sustainability Data Science conference, April 2025. <a href="files/2025%2004%2015%20Stanford%20Sustainability%20Data%20Science.pdf">[slides]</a></li>
+        <li><b>AI Applications to Chemical Engineering</b>, Cargnello group talk, Stanford, January 2024. <a href="files/2024%2001%2012%20Presentation%20Cargnello%20Group.pdf">[slides]</a></li>
+        <li><b>MoleCL: Molecular Graph Contrastive Learning with Reactions-Inspired Augmentations</b>, American Chemical Society, Fall 2023 Meeting. <a href="files/2023%2008%2016%20ACS%20Fall%20Presentation.pdf">[slides]</a></li>
     </ul>
 
     <h2>About me</h2>
 
     <h3>Things I've built</h3>
     <ul>
-        <li>I founded <a href="https://plumelabs.com">Plume Labs</a>, an air quality company building micro-sensors and AI forecasts for air pollution. We received multiple awards for our work, including the MIT Technology Review <a href="https://www.innovatorsunder35.com/the-list/romain-lacombe/">Innovators Under 35</a>, the <a href="https://www.red-dot.org/project/flow-by-plume-labs-38122">Red Dot Product Design</a> award, Fast Company's <a href="https://www.fastcompany.com/most-innovative-companies/2019/sectors/consumer-electronics">Most Innovative Companies</a>, and the <a href="https://www.ametsoc.org/AMs/about-ams/ams-awards-honors/2023-awards-and-honors-recipients/">American Meterological Society</a> award for outstanding services by a corporation. I'm also a TED Fellow and introduced our work on air quality <a href="https://www.ted.com/talks/romain_lacombe_a_personal_air_quality_tracker_that_lets_you_know_what_you_re_breathing?subtitle=en">at TED 2018</a>. Plume Labs was <a href="https://techcrunch.com/2022/01/24/accuweather-acquires-air-pollution-startup-plume-labs/">acquired by AccuWeather</a> and became its AI-for-climate center; today, our atmospheric forecasts power <a href="https://x.com/rlacombe/status/1906069606403551430">one in every four smartphones</a> worldwide.</li>
+        <li>I was the CEO and co-founder of <a href="https://plumelabs.com">Plume Labs</a>, an atmospheric sciences company building micro-sensors for air pollution and deep learning models for air quality prediction. We received multiple awards for our work, including the MIT Technology Review <a href="https://www.innovatorsunder35.com/the-list/romain-lacombe/">Innovators Under 35</a>, the <a href="https://www.red-dot.org/project/flow-by-plume-labs-38122">Red Dot Product Design</a> award, Fast Company's <a href="https://www.fastcompany.com/most-innovative-companies/2019/sectors/consumer-electronics">Most Innovative Companies</a>, and the <a href="https://www.ametsoc.org/AMs/about-ams/ams-awards-honors/2023-awards-and-honors-recipients/">American Meterological Society</a> award for outstanding services by a corporation. I'm also a TED Fellow and introduced our work on air quality <a href="https://www.ted.com/talks/romain_lacombe_a_personal_air_quality_tracker_that_lets_you_know_what_you_re_breathing?subtitle=en">at TED 2018</a>. Plume Labs was <a href="https://techcrunch.com/2022/01/24/accuweather-acquires-air-pollution-startup-plume-labs/">acquired by AccuWeather</a> and became its AI-for-climate center; today, our atmospheric forecasts power <a href="https://x.com/rlacombe/status/1906069606403551430">one in every four smartphones</a> worldwide.</li>
     </ul>
 
     <iframe src="https://www.youtube.com/embed/J4r9pgx_95E?si=KWLKjiFCeR8ie9-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     <ul>
         <li>From 2011 to 2014 I helped launch <a href="https://www.data.gouv.fr/en/">data.gouv.fr</a> to open government data in my native France.</li>
-        <li>I wrote and maintain <a href="https://distillate.dev">Distillate</a>, an open source package to automate and enrich the science paper reading workflow on reMarkable.</li>
+        <li>I'm currently exploring AI agents for <a href="https://github.com/rlacombe/distillate">autonomous ML research</a>, <a href="https://github.com/rlacombe/switchback-running">ultra trail training</a>, and public health causal inference (coming soon).</li>
     </ul>
 
     <h3>Investing</h3>
